@@ -3,92 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KidPuff - Making Breathing Fun for Kids</title>
+  <title>KidPuff | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      color: #333;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: #fffbe6; color: #333; }
+    nav {
+      background: #f8b500;
+      padding: 15px 30px;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
+    }
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.5em;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
     }
     header {
-      padding: 40px 20px 20px;
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #fceabb, #f8b500);
     }
-    header img {
-      width: 80px;
-    }
-    h1 {
-      font-size: 2.5em;
+    header h1 {
+      font-size: 2.8em;
       margin-bottom: 10px;
     }
-    p.tagline {
+    header p {
       font-size: 1.2em;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     a.button {
       background: #ff6b6b;
       color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
       text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-    a.button:hover {
-      background: #ff3b3b;
-    }
-    section.features {
-      padding: 40px 20px;
-      background: white;
-      border-radius: 30px 30px 0 0;
-      width: 100%;
-      max-width: 900px;
-      box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
-    }
-    .features h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .features ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-    }
-    .features li {
-      margin: 10px 0;
-      font-size: 1.1em;
+      font-weight: bold;
     }
     footer {
-      margin: 40px 20px;
-      font-size: 0.9em;
+      text-align: center;
+      padding: 20px;
+      background: #f8b500;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.imgur.com/zLZ6l1z.png" alt="KidPuff Logo" />
-    <h1>Welcome to KidPuff</h1>
-    <p class="tagline">Fun, Friendly Nebulizers Designed Just for Kids</p>
-    <a href="mailto:dhannajayyadav302@gmail.com" class="button">Contact Us</a>
-  </header>
-  <section class="features">
-    <h2>Why Choose KidPuff?</h2>
+  <nav>
+    <div class="logo">KidPuff</div>
     <ul>
-      <li>✨ Portable, cartoon-themed nebulizer designs</li>
-      <li>♥ Makes respiratory treatments less scary for kids</li>
-      <li>🏠 Perfect for home or hospital use</li>
-      <li>🌊 Doctor-recommended technology</li>
-      <li>🤝 Affordable for every parent</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </section>
+  </nav>
+  <header>
+    <h1>Making Breathing Fun for Kids</h1>
+    <p>Welcome to KidPuff — the cartoon-based nebulizer that makes every breath a breeze.</p>
+    <a href="product.html" class="button">Explore Our Product</a>
+  </header>
   <footer>
-    &copy; 2025 KidPuff | Made with ❤️ by Dhannajay Yadav
+    &copy; 2025 KidPuff | All Rights Reserved
   </footer>
 </body>
 </html>
-
+ 
