@@ -3,89 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KidPuff – Making Medicine Fun!</title>
+  <title>KidPuff - Making Breathing Fun for Kids</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0faff;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
     header {
-      background-color: #7ed6df;
-      padding: 1.5rem;
-      text-align: center;
-      color: #fff;
+      padding: 40px 20px 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header img {
+      width: 80px;
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    .feature {
-      background-color: #ffffff;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    p.tagline {
+      font-size: 1.2em;
+      margin-bottom: 30px;
     }
-    footer {
-      background-color: #2f3542;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .cta {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: #70a1ff;
+    a.button {
+      background: #ff6b6b;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
-    .cta:hover {
-      background-color: #1e90ff;
+    a.button:hover {
+      background: #ff3b3b;
+    }
+    section.features {
+      padding: 40px 20px;
+      background: white;
+      border-radius: 30px 30px 0 0;
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .features h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    .features li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    footer {
+      margin: 40px 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>KidPuff</h1>
-    <p>Making Medicine Fun for Kids</p>
+    <img src="https://i.imgur.com/zLZ6l1z.png" alt="KidPuff Logo" />
+    <h1>Welcome to KidPuff</h1>
+    <p class="tagline">Fun, Friendly Nebulizers Designed Just for Kids</p>
+    <a href="mailto:dhannajayyadav302@gmail.com" class="button">Contact Us</a>
   </header>
-
-  <section>
-    <h2>What is KidPuff?</h2>
-    <p>KidPuff is a child-friendly nebulizer designed to make respiratory treatment fun and stress-free. Shaped like cartoons and powered by USB, our nebulizers help kids feel safe and calm during treatment.</p>
+  <section class="features">
+    <h2>Why Choose KidPuff?</h2>
+    <ul>
+      <li>✨ Portable, cartoon-themed nebulizer designs</li>
+      <li>♥ Makes respiratory treatments less scary for kids</li>
+      <li>🏠 Perfect for home or hospital use</li>
+      <li>🌊 Doctor-recommended technology</li>
+      <li>🤝 Affordable for every parent</li>
+    </ul>
   </section>
-
-  <section>
-    <div class="feature">
-      <h3>🎨 Cartoon-Inspired Design</h3>
-      <p>Fun shapes like penguins, ducks, and cars that kids love!</p>
-    </div>
-    <div class="feature">
-      <h3>🔇 Whisper-Quiet Operation</h3>
-      <p>No more scary noise – just smooth, silent treatment.</p>
-    </div>
-    <div class="feature">
-      <h3>🧳 Portable and USB-Powered</h3>
-      <p>Take it anywhere – at home or on the go!</p>
-    </div>
-  </section>
-
-  <a class="cta" href="mailto:dhannajayyadav302@gmail.com">Get in Touch</a>
-
   <footer>
-    <p>&copy; 2025 KidPuff. All rights reserved.</p>
+    &copy; 2025 KidPuff | Made with ❤️ by Dhannajay Yadav
   </footer>
 </body>
 </html>
+
