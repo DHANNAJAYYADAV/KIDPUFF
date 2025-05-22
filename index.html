@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      scroll-behavior: smooth;
+    }
     body { font-family: 'Poppins', sans-serif; background: #fffbe6; color: #333; }
     nav {
       background: #f8b500;
@@ -14,6 +17,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
     }
     nav .logo {
       font-weight: 700;
@@ -34,6 +45,21 @@
       padding: 60px 20px;
       text-align: center;
       background: linear-gradient(to right, #fceabb, #f8b500);
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header img {
+      width: 200px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
     header h1 {
       font-size: 2.8em;
@@ -61,10 +87,37 @@
       font-size: 2em;
       margin-bottom: 20px;
       color: #f8b500;
+      animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    section.page img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 20px auto;
     }
     section.page p {
       margin-bottom: 15px;
       line-height: 1.6;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background: #f8b500;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -79,25 +132,28 @@
   <nav>
     <div class="logo">KidPuff</div>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="product.html">Product</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966483.png" alt="KidPuff Logo">
     <h1>Making Breathing Fun for Kids</h1>
     <p>Welcome to KidPuff — the cartoon-based nebulizer that makes every breath a breeze.</p>
-    <a href="product.html" class="button">Explore Our Product</a>
+    <a href="#product" class="button">Explore Our Product</a>
   </header>
   <section class="page" id="about">
     <h2>About KidPuff</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="About Image">
     <p>KidPuff is a healthcare innovation designed to reduce the fear and discomfort children experience during respiratory treatments. Founded by Dhannajay Yadav, our mission is to make nebulization fun, engaging, and stress-free.</p>
     <p>We're inspired by the belief that health tech should be friendly — especially for kids. With playful cartoon-themed designs and trusted medical quality, KidPuff brings comfort to families and care providers alike.</p>
   </section>
   <section class="page" id="product">
     <h2>Our Product</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/4009/4009090.png" alt="Product Image">
     <p>KidPuff is a compact, portable nebulizer specially built for children. It includes:</p>
     <ul>
       <li>✨ Cartoon-themed casing (e.g. animals, superheroes)</li>
@@ -115,10 +171,15 @@
   </section>
   <section class="page" id="contact">
     <h2>Contact Us</h2>
-    <p>Want to collaborate, invest, or join the KidPuff journey?</p>
-    <p>Email: <a href="mailto:dhannajayyadav302@gmail.com">dhannajayyadav302@gmail.com</a><br>
-       Instagram: <a href="https://instagram.com">@kidpuff</a><br>
-       Phone: 8503802336</p>
+    <form action="https://formspree.io/f/mwkgbnvn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:20px;">Or reach us directly:<br>
+      Email: <a href="mailto:dhannajayyadav302@gmail.com">dhannajayyadav302@gmail.com</a><br>
+      Phone: 8503802336</p>
   </section>
   <footer>
     &copy; 2025 KidPuff | All Rights Reserved
